@@ -1,12 +1,15 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Users, Target, Eye, Heart, Leaf, TrendingUp, Shield, Handshake } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
+      {/* Navigation */}
+      <Navbar />
+
       {/* Header */}
       <header className="bg-green-600 text-white py-6 shadow-lg">
         <div className="container mx-auto px-4">
@@ -49,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-16">
+      <section id="about" className="py-16">
         <div className="container mx-auto px-4">
           <Card className="mb-12 border-0 shadow-lg">
             <CardHeader className="bg-green-50 text-center">
@@ -134,12 +137,12 @@ const Index = () => {
       </section>
 
       {/* Objectives Section */}
-      <section className="py-16">
+      <section id="activities" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-green-800 mb-4 flex items-center justify-center gap-2">
               <Target className="h-8 w-8" />
-              🎯 Our Objectives
+              🎯 Our Activities & Objectives
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our comprehensive approach to empowering farmers and building sustainable agricultural practices
@@ -230,6 +233,36 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section - Placeholder */}
+      <section id="gallery" className="py-16 bg-green-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-green-800 mb-4">📸 Gallery</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Capturing moments of empowerment and agricultural success
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 text-lg">Gallery content coming soon</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section - Placeholder */}
+      <section id="contact" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-green-800 mb-4">📞 Contact Us</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Get in touch with us to learn more about our mission
+            </p>
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 text-lg">Contact information coming soon</p>
           </div>
         </div>
       </section>
